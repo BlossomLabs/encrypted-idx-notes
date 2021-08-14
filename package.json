@@ -3,6 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ceramicnetwork/cli": "^1.2.1",
+    "@ceramicnetwork/http-client": "^1.1.1",
+    "@ceramicstudio/idx": "^0.12.1",
+    "@ceramicstudio/idx-tools": "^0.11.0",
+    "@material-ui/core": "^4.12.3",
+    "@material-ui/icons": "^4.11.2",
+    "@stablelib/random": "^1.0.1",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -10,17 +17,21 @@
     "@types/node": "^12.20.19",
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
+    "key-did-provider-ed25519": "^1.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "typescript": "^4.3.5",
+    "uint8arrays": "^2.1.10",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bootstrap": "node ./bootstrap.js",
+    "ceramic": "ceramic daemon"
   },
   "eslintConfig": {
     "extends": [
